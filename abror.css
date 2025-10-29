@@ -1,95 +1,178 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #476076, #020404);
-    color: #333;
-  }
-  header {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #111;
-    padding: 10px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
-  }
-  nav a:hover {
-    color: #4facfe;
-    transform: scale(1.1);
-  }
-  section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-  }
-  h1, h2, p, li {
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  h1:hover, h2:hover, p:hover, li:hover {
-    transform: translateX(10px);
-    color: #0056b3;
-  }
-  .card {
-    background: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-  .card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  }
-  footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #476076, #020404);
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #111;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #4facfe;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1,
+h2,
+p,
+li {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover,
+h2:hover,
+p:hover,
+li:hover {
+  transform: translateX(10px);
+  color: #0056b3;
+}
+
+.card {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
 
 
- 
-  *{transition:background-color .22s ease, color .22s ease, transform .22s cubic-bezier(.2,.9,.3,1);}
 
-  
-  h1,h2,h3,h4,p, .pill, .tech, .kicker, .stat h3, .brand p, .brand h1{transition:transform .24s ease, color .20s ease, text-shadow .28s ease;}
-
-
-  .card:hover{transform:translateY(-8px) scale(1.01); box-shadow:0 18px 40px rgba(2,6,23,0.75); border-color: rgba(255,255,255,0.06)}
-
- 
-  .card h4:hover, .tech:hover, .pill:hover, .kicker:hover{transform:translateY(-6px); color:var(--accent-2); text-shadow:0 10px 30px rgba(96,165,250,0.06)}
-
- 
-  .cta:hover{transform:translateY(-4px) scale(1.01)}
-  .secondary:hover{transform:translateY(-4px); border-color: rgba(255,255,255,0.08)}
-
-  
-  .logo:hover{transform:rotate(-6deg) scale(1.03)}
-
- 
-  .stat:hover{transform:translateY(-6px); background:linear-gradient(90deg, rgba(96,165,250,0.02), rgba(110,231,183,0.02))}
-  .chip:hover{transform:translateY(-4px) scale(1.02)}
-
-  .card h4{position:relative}
-  .card h4::after{content:""; position:absolute; left:0; bottom:-8px; height:3px; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); border-radius:4px; transition:width .32s cubic-bezier(.2,.9,.3,1)}
-  .card h4:hover::after{width:36%}
+* {
+  transition: background-color .22s ease, color .22s ease, transform .22s cubic-bezier(.2, .9, .3, 1);
+}
 
 
-  .card p:hover{transform:translateX(4px); color:#2818db}
+h1,
+h2,
+h3,
+h4,
+p,
+.pill,
+.tech,
+.kicker,
+.stat h3,
+.brand p,
+.brand h1 {
+  transition: transform .24s ease, color .20s ease, text-shadow .28s ease;
+}
 
-  
-  nav .btn:hover{transform:translateY(-3px); color:var(--accent-2); border-color:rgba(96,165,250,0.12)}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.75);
+  border-color: rgba(255, 255, 255, 0.06)
+}
+
+
+.card h4:hover,
+.tech:hover,
+.pill:hover,
+.kicker:hover {
+  transform: translateY(-6px);
+  color: var(--accent-2);
+  text-shadow: 0 10px 30px rgba(96, 165, 250, 0.06)
+}
+
+
+.cta:hover {
+  transform: translateY(-4px) scale(1.01)
+}
+
+.secondary:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.08)
+}
+
+
+.logo:hover {
+  transform: rotate(-6deg) scale(1.03)
+}
+
+
+.stat:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.02), rgba(110, 231, 183, 0.02))
+}
+
+.chip:hover {
+  transform: translateY(-4px) scale(1.02)
+}
+
+.card h4 {
+  position: relative
+}
+
+.card h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 4px;
+  transition: width .32s cubic-bezier(.2, .9, .3, 1)
+}
+
+.card h4:hover::after {
+  width: 36%
+}
+
+
+.card p:hover {
+  transform: translateX(4px);
+  color: #2818db
+}
+
+
+nav .btn:hover {
+  transform: translateY(-3px);
+  color: var(--accent-2);
+  border-color: rgba(96, 165, 250, 0.12)
+}
+
+
+img {
+  width: 500px;
+}
